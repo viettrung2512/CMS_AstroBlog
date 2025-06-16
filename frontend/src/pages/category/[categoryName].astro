@@ -1,0 +1,6 @@
+---
+import TagList from '../../pages/Public/TagPage/TagList';
+const { categoryName } = Astro.params;
+---
+
+<TagList client:load categoryName={categoryName} />

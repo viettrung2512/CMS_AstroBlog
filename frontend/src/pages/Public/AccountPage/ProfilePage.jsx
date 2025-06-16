@@ -4,12 +4,10 @@ import BlogList from "../../../components/Blog/BlogList";
 import NavBar from "../../../components/Header/NavBar";
 import SideBar from "../../../components/Sidebar/SideBar";
 import "../../../App.css";
-import { useParams } from "react-router-dom";
 import FollowButton from "../../../components/Button/FollowButton";
 import { useNavigate } from "react-router-dom";
 
-const ProfilePage = () => {
-  const { userId } = useParams();
+const ProfilePage = (userId ) => {
   const [myPosts, setMyPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [user, setUser] = useState(null);

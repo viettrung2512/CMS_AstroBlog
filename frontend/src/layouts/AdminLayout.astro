@@ -1,0 +1,12 @@
+---
+import Header from '../pages/Admin/Header.astro';
+import Sidebar from '../pages/Admin/Sidebar.astro';
+---
+
+<div class="grid-container">
+  <Header />
+  <Sidebar />
+  <div class="content">
+    <slot />
+  </div>
+</div>

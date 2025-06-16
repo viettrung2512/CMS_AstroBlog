@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import NavBar from "../../../components/Header/NavBar";
 import SideBar from "../../../components/Sidebar/SideBar";
 import BlogList from "../../../components/Blog/BlogList"; // Đảm bảo bạn đã import BlogList
 
-const TagList = () => {
-  const { categoryName } = useParams(); // Lấy category từ URL
+const TagList = (categoryName) => {
   const [blogs, setBlogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true); // State để theo dõi trạng thái loading
 
