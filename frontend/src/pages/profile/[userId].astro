@@ -1,6 +1,6 @@
 ---
-import ProfilePage from '../Public/AccountPage/ProfilePage.jsx';
+import ProfilePage from '.../components/AccountPage/ProfilePage.jsx';
 const { userId } = Astro.params;
 ---
 
-<ProfilePage client:load userId={userId} />
+<ProfilePage client:only="react" userId={userId} />
